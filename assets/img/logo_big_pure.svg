@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<defs>
+		<image width="500" height="500" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQMAAADxGE3JAAAAAXNSR0IB2cksfwAAAANQTFRFHyYtNgEGxgAAADVJREFUeJztwTEBAAAAwqD1T+1hDaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbn0AAAGFEtj2AAAAAElFTkSuQmCC"/>
+		<image width="235" height="235" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADrAQMAAACyxPOWAAAAAXNSR0IB2cksfwAAAANQTFRFKLd5E3nbZQAAAB5JREFUeJztwTEBAAAAwqD1T20IX6AAAAAAAAAADgMcdQABwkAj1wAAAABJRU5ErkJggg=="/>
+		<image width="235" height="235" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADrAgMAAAD1ZIlGAAAAAXNSR0IB2cksfwAAAAlQTFRF2lQu2lQu2lQu8GA2rAAAAAN0Uk5TPP8Oo5sIXwAAAEpJREFUeJztyzEBADAIA7CawNnwg3Q0jDv5k+qrF9d1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdd1Xdf9vZOzBS5SrhxVsdM8AAAAAElFTkSuQmCC"/>
+		<image width="235" height="235" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADrAgMAAAD1ZIlGAAAAAXNSR0IB2cksfwAAAAlQTFRF////////////jkrl/gAAAAN0Uk5TPA7/ZIYaKQAAAEhJREFUeJztyyEBAAAIA7AL+mdAk5IMoDe/5K0yb+26ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu617v878j6XCV3pgAAAABJRU5ErkJggg=="/>
+		<image width="235" height="235" id="img5" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADrAgMAAAD1ZIlGAAAAAXNSR0IB2cksfwAAAAlQTFRF/7hI/7hI/7hIyItSswAAAAN0Uk5TDjz/rhl/pgAAAE1JREFUeJzty0ERACAIADBK2AxLmMwjJRngvf0X525lvNr6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6ruu6rju9DaHJqRxuHeF/AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="logo_bg" href="#img1" x="0" y="0" />
+	<use id="lt_sq" href="#img2" x="6" y="6" />
+	<use id="rt_sq" href="#img3" x="259" y="6" />
+	<use id="lb_sq" href="#img4" x="6" y="259" />
+	<use id="rb_sq" href="#img5" x="259" y="259" />
+</svg>

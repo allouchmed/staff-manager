@@ -1,0 +1,59 @@
+/* Flex Forms Customization */
+
+.template-tables th, .template-tables td, .template-tables-pagination {
+    font-weight: 100 !important;
+    color: #74788d;
+    font-size: 0.6rem !important;
+}
+
+.template-tables th, .template-tables td {
+    text-align: center;
+}
+
+.template-tables-pagination .pagination-range-btn.active {
+    background-color: #007bff !important;
+    color: white;
+}
+
+.template-tables-pagination .pagination-range-btn,
+.template-tables-pagination .pagination-page-btn {
+    transition: 0.3s;
+}
+
+.template-tables-pagination .pagination-range-btn:hover,
+.template-tables-pagination .pagination-page-btn:hover {
+    background-color: #007bff !important;
+    color: white;
+}
+
+.template-tables .table-transition-btn {
+    display: flex;
+}
+
+.template-tables td.action-cell {
+    width: 1rem !important;
+    padding: 0 0.3rem !important;
+}
+
+.template-tables i.table-item-add-icon {
+    margin-left: 0.5rem;
+}
+
+.template-tables i.table-item-add-icon,
+.template-tables i.table-item-delete-icon {
+    opacity: 0.2;
+}
+
+.template-tables i.table-item-add-icon {
+    color: #1dc9b7;
+}
+
+.template-tables i.table-item-delete-icon {
+    color: #fd397a;
+}
+
+.template-tables i.table-item-add-icon.active,
+.template-tables i.table-item-delete-icon.active {
+    opacity: 1;
+}
+

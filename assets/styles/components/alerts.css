@@ -1,0 +1,65 @@
+/* Alerts CSS */
+
+.custom-alert {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+.custom-alert .alert-item {
+    display: flex;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.custom-alert .alert-item:last-child {
+    margin-bottom: 0;
+}
+
+.custom-alert .alert-item:first-child {
+    margin-top: 0;
+}
+
+.custom-alert .alert-block {
+    display: flex;
+    align-items: center;
+}
+
+.custom-alert .alert-icon i {
+    font-size: 1.4rem;
+}
+
+.custom-alert .alert-icon,
+.custom-alert .alert-toolbar {
+    max-width: fit-content;
+    padding: 0.5rem;
+}
+
+.custom-alert .alert-message {
+    width: 100%;
+    font-size: 0.7rem;
+}
+
+.custom-alert .alert-close-btn {
+    padding: 0 0.3rem;
+    font-size: 1rem;
+    color: unset;
+}
+
+.custom-alert .alert-item.success .alert-icon {
+    color: #1dc9b7;
+}
+
+.custom-alert .alert-item.warning .alert-icon {
+    color: #ffb822;
+}
+
+.custom-alert .alert-item.error .alert-icon {
+    color: #fd397a;
+}
+
+.custom-alert .alert-item.info .alert-icon {
+    color: #007bff;
+}

@@ -1,0 +1,139 @@
+/* Navbar CSS */
+
+/* region Navbar */
+
+#navbar-base-row {
+    height: auto;
+    padding: 0.5rem 0 ;
+    color: #675d79;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 40px 0 rgba(82,63,105,.1);
+}
+
+.navbar-row {
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar-row.navbar-row-logo {
+    max-width: 200px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.navbar-row.navbar-row-menu {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.navbar-row.navbar-row-menu i {
+    font-size: 24px;
+}
+
+.navbar-row.navbar-row-badge {
+    /* pass */
+}
+
+.navbar-row.navbar-row-toggle {
+    max-width: 30px;
+    justify-content: center;
+}
+
+.navbar-row .navbar-btn {
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    -webkit-transition: 0.06s 0.06s;
+}
+
+.navbar-row .navbar-grouper {
+    border-right: 1px solid rgba(141, 141, 141, 0.3);
+}
+
+.navbar-row .navbar-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-row .navbar-logo span {
+    margin-left: 10px;
+}
+
+#navbar-base-row .navbar-toggler {
+    padding: 0;
+}
+
+#navbar-collapsed-content {
+    background-color: #f2f2f2;
+}
+
+#navbar-collapsed-content .navbar-btn {
+    margin: 0.5rem;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    -webkit-transition: 0.06s 0.06s;
+}
+
+#navbar-collapsed-content .navbar-collapsed-element-row {
+    padding: 0 0.7rem;
+}
+
+#navbar-collapsed-content .navbar-grouper {
+    width: 100%;
+    height: 1px;
+    background: rgba(141, 141, 141, 0.3);
+}
+
+.navbar-btn.disabled-btn {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.navbar-btn:hover {
+    color: #DD5124;
+}
+
+.navbar-btn.active {
+    color: #DD5124;
+}
+
+/* endregion */
+
+/* region Media */
+
+@media screen and (max-width: 768px) {
+    .navbar-content-to-collapse {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-row-logo {
+       font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-row-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navbar-collapsed-content {
+        display: none;
+    }
+}
+
+/* endregion */

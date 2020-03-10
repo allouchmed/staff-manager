@@ -1,0 +1,50 @@
+<!-- Navbar -->
+
+{% load i18n %}
+
+<div id="navbar-base-row" class="row">
+    <div class="row navbar-row navbar-row-badge">
+        <div class="col dropdown-with-badge-col" data-dropdown-align="right">
+            <div class="row info-badge-row" data-toggle="dropdown" aria-expanded="false">
+                <div class="col info-badge-col info-badge-col-align">
+                    <div class="info-badge">
+                        A
+                    </div>
+                </div>
+                <div class="col info-badge-col-description-align">
+                    <div class="row info-badge-row-description info-badge-row-align hide-on-sidebar-close">
+                        <span>Anonymous</span>
+                        <i class="material-icons ">keyboard_arrow_down</i>
+                    </div>
+                    <div class="row info-badge-row-description info-badge-row-align hide-on-sidebar-close">
+                        <span>No E-mail found</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-menu dropdown-menu-right dropdown-with-badge-menu">
+                <div class="dropdown-header">
+                    <div class="row info-badge-row">
+                        <div class="col info-badge-col">
+                            <div class="info-badge">
+                                A
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row info-badge-row-description">
+                                <span>Anonymous User</span>
+                            </div>
+                            <div class="row info-badge-row-description">
+                                <span>Greetings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'landing' %}" class="dropdown-item">
+                    <i class="material-icons">chevron_right</i>
+                    {% trans 'To start page' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

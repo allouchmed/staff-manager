@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load static %}
+        {% load i18n %}
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+
+        {% include 'blocks/_styles.html' %}
+
+        <title>MyManager</title>
+    </head>
+    <body>
+        <div id="base-container" class="container-fluid">
+            <div id="base-row" class="row">
+                <div id="base-content" class="col">
+                    <div id="content-base-row" class="row">
+                        {% block content %}
+                            <div class="col-12 landing-flex-col">
+                                {% include 'components/_logo.html' %}
+                                <div class="row landing-content-row landing-left-side-main-row">
+                                    <div class="landing-center-content">
+                                        <div class="landing-title-level-one">
+                                            {% blocktrans %}
+                                                Manage your company staff with StaffManager!
+                                            {% endblocktrans %}
+                                        </div>
+                                        <div class="landing-title-level-two">
+                                            {% blocktrans %}
+                                                StaffManager is a Django demo application that shows the basic CRUD
+                                                operations using the company's personnel management as an example.
+                                            {% endblocktrans %}
+                                        </div>
+                                        <a href="{% url 'dashboard:employees' %}" class="btn btn-outline-primary">
+                                            Try for free
+                                        </a>
+                                    </div>
+                                </div>
+                                {% include 'components/_footer.html' %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'blocks/_scripts.html' %}
+    </body>
+</html>

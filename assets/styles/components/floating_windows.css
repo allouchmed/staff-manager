@@ -1,0 +1,21 @@
+/* Floating Windows CSS Customization */
+
+.fw-confirmation {
+    width: 100%;
+}
+
+.fw-confirmation .fw-confirmation-title {
+    color: #fd397a;
+}
+
+.fw-confirmation .fw-confirmation-title,
+.fw-confirmation .fw-confirmation-message,
+.fw-confirmation .fw-confirmation-subject,
+.fw-confirmation .fw-confirmation-btn-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fw-confirmation .fw-confirmation-btn-container .fw-confirmation-btn {
+    margin-left: auto;
+}

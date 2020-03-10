@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    {% block breadcrumbs %}
+        <div class="row">
+            <div class="col-12">
+                {% include 'components/breadcrumbs.html' with action_set=breadcrumbs only %}
+            </div>
+        </div>
+    {% endblock %}
+    {% block alerts %}
+        <div class="row">
+            <div class="col-12">
+                {% include 'components/_alerts.html' with messages=messages only %}
+            </div>
+        </div>
+    {% endblock %}
+    <div id="content-base-row" class="row">
+        <div class="col-12">
+            <div class="content-block">
+                <div class="row padding-block content-block-header">
+                    {% block content_header %}
+                        {% block header_title %}
+                            <div class="col content-block-title">{{ title }}</div>
+                        {% endblock %}
+                        {% block header_toolbar %}{% endblock %}
+                    {% endblock %}
+                </div>
+                <div class="content-block-body">
+                    {% block content_body %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

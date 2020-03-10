@@ -1,0 +1,34 @@
+/* Breadcrumbs CSS */
+
+.breadcrumbs-block {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs-block .breadcrumbs-current-page {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #595d6e;
+    padding-right: 0.7rem;
+}
+
+.breadcrumbs-block .breadcrumbs-chain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #959cb6;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.breadcrumbs-block .breadcrumbs-chain i.breadcrumbs-start-icon {
+    margin-right: 0.3rem;
+}
+
+.breadcrumbs-block .breadcrumbs-chain i {
+    font-size: 0.9rem;
+}

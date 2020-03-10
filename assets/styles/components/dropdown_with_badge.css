@@ -1,0 +1,50 @@
+/* Dropdown CSS */
+
+/* region Dropdown with badge */
+
+.dropdown-with-badge-col {
+    font-size: 0.5rem;
+}
+
+.dropdown-with-badge-col .dropdown-with-badge-menu {
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px, rgba(0, 0, 0, 0.3) 0 4px 20px 0;
+    border: none;
+}
+
+.dropdown-with-badge-col .dropdown-with-badge-menu.show {
+    top: 0.2rem !important;
+}
+
+.dropdown-with-badge-col .dropdown-with-badge-menu .dropdown-header {
+    padding: 0.2rem 0.6rem 0.3rem 0.6rem;
+    font-size: 0.5rem;
+}
+
+.dropdown-with-badge-col .dropdown-with-badge-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+}
+
+.dropdown-with-badge-col .info-badge-row-description {
+    align-items: center;
+}
+
+/* Right aligned dropdown */
+
+.dropdown-with-badge-col[data-dropdown-align="right"] .info-badge-col-align {
+    order: 2
+}
+
+.dropdown-with-badge-col[data-dropdown-align="right"] .info-badge-col-description-align {
+    order: 1
+}
+
+.dropdown-with-badge-col[data-dropdown-align="right"] .info-badge-row-align {
+    justify-content: flex-end;
+}
+
+/* endregion */

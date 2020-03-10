@@ -1,0 +1,45 @@
+{% extends 'base_content.html' %}
+
+{% load flex_forms %}
+
+{% block header_toolbar %}
+    <div class="col content-block-toolbar">
+        {% for action in action_set %}
+            {{ action }}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block content_body %}
+    {% if form %}
+        <div class="row">
+            <div class="col-12 form-container">
+                {% as_flex form %}
+            </div>
+        </div>
+    {% endif %}
+    {% if static_fieldset %}
+        <div class="row">
+            <div class="col-12 form-container">
+                {% as_flex static_fieldset %}
+            </div>
+        </div>
+    {% endif %}
+    {% if filter %}
+        <div class="row">
+            <div class="col-12 form-container">
+                {{ filter.form.as_flex }}
+            </div>
+        </div>
+    {% endif %}
+    {% if table %}
+        <div class="row">
+            <div class="col-12">
+                <div class="perfect-scrollable js-perfect_scrollbar">
+                    {{ table.render }}
+                    {{ pagination.render }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

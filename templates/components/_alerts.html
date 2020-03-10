@@ -1,0 +1,29 @@
+{% if messages %}
+    <div class="custom-alert js-alert_block">
+        {% for message in messages %}
+            <div class="alert-item {{ message.tags }}">
+                <div class="alert-block alert-icon">
+                    {% if message.tags == 'warning' %}
+                        <i class="material-icons">warning</i>
+                    {% elif message.tags == 'info' %}
+                        <i class="material-icons">report</i>
+                    {% elif message.tags == 'danger' %}
+                        <i class="material-icons">flash_on</i>
+                    {% elif message.tags == 'success' %}
+                        <i class="material-icons">check</i>
+                    {% else %}
+                        <i class="material-icons">warning</i>
+                    {% endif %}
+                </div>
+                <div class="alert-block alert-message alert-dismissible fade show" role="alert">
+                   {{ message | safe }}
+                </div>
+                <div class="alert-block alert-toolbar">
+                    <button type="button" class="btn-outline-light custom-btn alert-close-btn js-alert_dismiss_btn">
+                        &times;
+                    </button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

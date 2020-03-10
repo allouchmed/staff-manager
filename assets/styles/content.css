@@ -1,0 +1,36 @@
+/* Content styles */
+
+.content-block {
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 0.5rem 1rem;
+    overflow: hidden;
+}
+
+.content-block .padding-block {
+    padding: 0.7rem 0.9rem;
+}
+
+.content-block .content-block-header {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #ebedf2;
+}
+
+.content-block .content-block-header .content-block-title {
+    display: flex;
+}
+
+.content-block .content-block-header .content-block-toolbar {
+    display: flex;
+    max-width: fit-content;
+}
+
+.content-block .content-block-header .content-block-toolbar .content-block-toolbar-btn i {
+    margin-right: 0.3rem;
+}
+
+.content-block .form-container {
+    padding: 0.7rem 1.2rem 1.2rem;
+}

@@ -1,0 +1,82 @@
+/* Flex Forms CSS Customization */
+
+.flex-object input, .flex-object select, .flex-object textarea  {
+    padding: 0.3rem !important;
+}
+
+.flex-object .flex-field-main-label, .flex-object input, .flex-object select {
+    font-weight: 100 !important;
+    color: #74788d !important;
+    font-size: 0.6rem !important;
+    margin: 0;
+}
+
+.flex-object .flex-field-main-label {
+    padding: 0 !important;
+}
+
+.flex-object .flex-fields-row_title {
+    padding: 10px 0;
+}
+
+.flex-object .help-text {
+    display: block;
+}
+
+.flex-object .flex-half-width {
+    width: 25% !important;
+}
+
+#employee-filter.flex-object .flex-fields-column:nth-of-type(3) .flex-field-group {
+    width: fit-content;
+    padding: 0.2rem;
+}
+
+
+#employee-create-form.flex-object .flex-fields-column {
+    width: 50%;
+}
+
+.flex-object .flex-field-group.object-add-btn-container {
+    width: fit-content;
+}
+
+/* region Media */
+
+@media screen and (max-width: 1150px) {
+
+    #employee-create-form.flex-object .flex-fields-column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .flex-object .flex-half-width {
+        width: 50% !important;
+    }
+
+    #employee-create-form.flex-object .flex-fields-column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #employee-filter.flex-object .flex-fields-row {
+       flex-wrap: wrap;
+    }
+    #employee-filter.flex-object .block-with-padding {
+        margin: 0 !important;
+    }
+
+    #employee-filter.flex-object .flex-field-main-label {
+        margin: 8px 0 0;
+    }
+
+    .flex-object .flex-half-width {
+        width: 100% !important;
+    }
+}
+
+/* endregion */

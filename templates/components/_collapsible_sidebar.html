@@ -1,0 +1,46 @@
+<!-- Sidebar -->
+
+{% load i18n %}
+
+<div id="main_sidebar" class="col collapsible-sidebar"
+     data-is-open="{{ sidebar_menu.sidebar_is_open|yesno:'true,false' }}">
+    <div class="sidebar-pos-fixed">
+        <div class="row sidebar-row sidebar-row-header">
+            <div class="col-12 sidebar-col-logo">
+                <div class="sidebar-logo center-on-sidebar-close">
+                    <img src="/assets/img/logo_img.png" height="22" width="23">
+                    <span class="hide-on-sidebar-close">MyManager</span>
+                </div>
+            </div>
+        </div>
+        <div class="row sidebar-row sidebar-row-body">
+            <div class="col-12 sidebar-col-body">
+                {% for action_set in sidebar_menu %}
+                    <div class="sidebar-grouper">
+                        <div class="grouper-title">
+                            <span class="hide-on-sidebar-close">{{ action_set.group_name }}</span>
+                        </div>
+                        {% for action in action_set %}
+                            <div class="sidebar-btn-wrapper">
+                                {{ action }}
+                            </div>
+                        {% endfor%}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row sidebar-row sidebar-row-footer">
+            <div class="col-12">
+                <div class="sidebar-toolbar">
+                    <button type="button" class="sidebar-toolbar-btn"
+                            data-sidebar-toggle="main_sidebar"
+                            data-url="{% url 'utils:sidebar_mode_save' 'main_sidebar' sidebar_menu.sidebar_is_open|yesno:'false,true' %}">
+                        <i class="material-icons hide-on-sidebar-open">keyboard_arrow_right</i>
+                        <i class="material-icons hide-on-sidebar-close">keyboard_arrow_left</i>
+                        <span class="hide-on-sidebar-close">{% trans 'Collapse' %}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

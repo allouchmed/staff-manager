@@ -1,0 +1,18 @@
+{% extends 'floating_windows/windows/default.html' %}
+
+{% load i18n %}
+
+{% block body_content %}
+    <form id="confirm-action-form" method="POST">
+        {% csrf_token %}
+        <div class="fw-confirmation">
+            <div class="fw-confirmation-title js-confirmation_title"></div>
+            <div class="fw-confirmation-message js-confirmation_message"></div>
+            <div class="fw-confirmation-btn-container">
+                <button type="submit" class="custom-btn btn-outline-light red-btn fw-confirmation-btn js-confirm_btn">
+                    {% trans 'Confirm' %}
+                </button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

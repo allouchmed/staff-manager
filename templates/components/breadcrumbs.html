@@ -1,0 +1,14 @@
+{% load dev_tools %}
+
+<div class="breadcrumbs-block">
+    <div class="breadcrumbs-current-page">{{ action_set.current_crumb_name }}</div>
+    <div class="breadcrumbs-chain">
+        <i class="material-icons breadcrumbs-start-icon">bookmark</i>
+        {% for action in action_set %}
+            {{ action|tweak_parameter:'class: breadcrumb-link' }}
+            {% if not forloop.last %}
+                <i class="material-icons">chevron_right</i>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

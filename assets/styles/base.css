@@ -1,0 +1,92 @@
+/* Base styles */
+
+html, body {
+    height: 100%;
+    font-size: 24px;
+}
+
+body{
+    height: 100%;
+    background-color: #f2f3f8;
+    color: #74788d;
+    font-family: 'Rubik', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+form {
+    width: 100%;
+}
+
+/* region Bases */
+
+#base-container, #base-row {
+    height: 100%;
+}
+
+#base-content {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+}
+
+#content-base-row {
+   height: 100%;
+}
+
+#footer-base-row {
+    flex: 1;
+    min-height: 2rem;
+    background-color: #fff;
+    align-items: center;
+}
+
+#footer-base-row .footer-base-col .footer-logo-title {
+    font-size: 0.58rem;
+}
+
+/* endregion */
+
+/* region System Messages */
+
+.system-message {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 4.17rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.83rem
+}
+
+.system-message .system-message-logo {
+    padding: 0 0.83rem 1rem;
+}
+
+.system-message .system-message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.system-message .system-message-subject {
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.system-message .system-message-text {
+    font-size: 0.7rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+/* endregion */
+
+/* region Other */
+
+.perfect-scrollable {
+    position: relative;
+    overflow: hidden;
+}
+
+/* endregion */

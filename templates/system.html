@@ -1,0 +1,31 @@
+{% extends 'landing.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="col-12 landing-flex-col landing-base-auth-col">
+        {% include 'components/_logo.html' %}
+        <div class="row landing-content-row landing-auth-main-row">
+            {% block content_body %}
+                <div class="system-message">
+                    <div class="system-message-logo">
+                        {{ message_icon }}
+                    </div>
+                    <div class="system-message-content">
+                        <div class="system-message-subject">
+                            {{ message_subject }}
+                        </div>
+                        <div class="system-message-text">
+                            {{ message_text }}
+                            {% if message_link %}
+                                <br>
+                                {{ message_link }}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+        {% include 'components/_footer.html' %}
+    </div>
+{% endblock %}

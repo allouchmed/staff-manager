@@ -1,0 +1,51 @@
+/* Buttons CSS */
+
+/* region Regular buttons */
+
+.inner-btn-border-right {
+    display: None;
+    width: 0.17rem;
+    border-right: 0.2rem solid;
+    border-radius: 0 0.25rem 0.25rem 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.custom-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+    padding: unset;
+    margin: unset;
+}
+
+.custom-link:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+.custom-btn {
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 100;
+    color: #007bff;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+}
+
+.custom-btn.red-btn {
+    color: #fd397a;
+}
+
+.custom-btn:hover {
+    text-decoration: none;
+}
+
+/* endregion */

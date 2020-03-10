@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+
+        {% block static_styles %}
+            {% include 'blocks/_styles.html' %}
+        {% endblock %}
+
+        <title>Staff Manager</title>
+    </head>
+    <body>
+        {% block base_body %}
+            <div id="base-container" class="container-fluid">
+                <div id="base-row" class="row">
+                    {% block sidebar %}
+                        {% include 'components/_collapsible_sidebar.html' %}
+                    {% endblock %}
+                    <div id="base-content" class="col">
+                        {% block navbar %}
+                            {% include 'components/_navbar.html' %}
+                        {% endblock %}
+                        {% block content %}
+                        {% endblock %}
+                        {% block footer %}
+                            {% include 'components/_footer.html' %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+
+        {% include 'components/floating_windows/confirm_action.html' with fw_id='confirm_action' %}
+        {% include 'floating_windows/windows/default.html' %}
+
+        {% block static_js %}
+            {% include 'blocks/_scripts.html' %}
+        {% endblock %}
+    </body>
+</html>
