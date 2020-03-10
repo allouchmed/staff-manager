@@ -30,7 +30,7 @@ management as an example.
 
 #### Note
 
-* Before use create necessary relations: Country, City and etc.
+* Before use, create necessary relations: Country, City and etc.
 
 1. Remove employee from department
 To delete employee from department use filter `In the department` and select employees by `trash` button.
