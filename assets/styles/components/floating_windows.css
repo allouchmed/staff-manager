@@ -19,3 +19,19 @@
 .fw-confirmation .fw-confirmation-btn-container .fw-confirmation-btn {
     margin-left: auto;
 }
+
+/* region Media */
+
+@media screen and (max-width: 768px) {
+    #confirm_action.fw-1 {
+         left: 30% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #confirm_action.fw-1 {
+         left: 15% !important;
+    }
+}
+
+/* endregion */
