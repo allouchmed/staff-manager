@@ -145,7 +145,8 @@ class EmployeeCreateUpdateMixinView(BreadcrumbsMixinView, TitleViewMixin, Action
     def form_valid(self, form):
         self.object = form.save(commit=False)
         department = form.cleaned_data.get('department')
-        self.object.organization = department.organization
+        if department:
+            self.object.organization = department.organization
         self.object.save()
         return HttpResponseRedirect(self.get_success_url())
 
