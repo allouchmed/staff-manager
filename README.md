@@ -33,12 +33,15 @@ management as an example.
 * Before use, create necessary relations: Country, City and etc.
 
 1. Remove employee from department
-To delete employee from department use filter `In the department` and select employees by `trash` button.
+
+    To delete employee from department use filter `In the department` and select employees by `trash` button.
 
 2. Add employee to the department:
-Uncheck filter `In the department` to show non free employees. Select employees by `+` button in the table.
+
+    Uncheck filter `In the department` to show non free employees. Select employees by `+` button in the table.
 
 You can search employees with table filters.
+
 For save selection click `Save selection` button on the toolbar. To reset selection click `Reset selection` button.
 
 #### Example
