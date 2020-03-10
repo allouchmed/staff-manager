@@ -26,7 +26,7 @@ management as an example.
 
 #### Deprecated
 
-* `django-autocomplete-light` is too old, so other libraries were used.
+* `django-autocomplete-light` is too old, so were used custom solution.
 
 #### Note
 
